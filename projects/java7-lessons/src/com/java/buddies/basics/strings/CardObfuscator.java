@@ -1,20 +1,25 @@
-package com.java.buddies.strings;
+package com.java.buddies.basics.strings;
 
 import java.util.Scanner;
 
 /**
- * Ofuscación de las tarjetas
+ * <b>Caso de uso: <b/> Ofuscación de las tarjetas
+ * <br>
+ * <b>Reglas de negocio: <b/>
  * - Para evitar la divulgación innecesaria de información confidencial del usuario, algunos datos deben ser mostrados parcialmente.
  * - El BIN (Bank Identification Number) es el conjunto de los seis primeros dígitos de una tarjeta, los cuales permiten identificar:
  *    - Banco y país de emisión de la tarjeta
  *    - Tipo de tarjeta (crédito, débito, etc)
  *    - Red de pago (Visa, Mastercard, etc)
  * - Tanto el BIN como los últimos cuatro dígitos de la tarjeta deben mostrarse, mientras que la parte central debe ser ofuscada.
- * - Por ejemplo:
- *    - Si la tarjeta tiene 16 dígitos: 4222241111113004 --> 422224******3004
- *    - Si la tarjeta tiene 15 dígitos: 377753111113380 --> 377753*****3380
+ * <br>
+ * <b>Criterios de aceptación: <b/> La aplicación debe ofuscar la tarjeta ingresada.
+ * <br>
+ * <b>Ejemplos: <b/>
+ * - Si la tarjeta tiene 16 dígitos: 4222241111113004 --> 422224******3004
+ * - Si la tarjeta tiene 15 dígitos: 377753111113380 --> 377753*****3380
  */
-public class CardObfuscation {
+public class CardObfuscator {
 
   private final static String SIX_CHARS_MASK = "******";
   private final static String FIVE_CHARS_MASK = "*****";

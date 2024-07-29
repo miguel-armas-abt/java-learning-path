@@ -1,8 +1,8 @@
 /**
  * Un paquete es como una carpeta en nuestro proyecto que nos permite organizar nuestras clases en diferentes módulos.
- * En este caso, com.java.buddies.main es el paquete donde se encuentra la clase Application.
+ * En este caso, com.java.buddies.basics.main es el paquete donde se encuentra la clase Application.
  */
-package com.java.buddies.main;
+package com.java.buddies.basics.main;
 
 /**
  * - Application es una clase de Java. Una clase es una plantilla que define el comportamiento del programa.

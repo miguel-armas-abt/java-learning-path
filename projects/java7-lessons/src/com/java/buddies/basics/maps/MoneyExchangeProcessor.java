@@ -1,15 +1,25 @@
-package com.java.buddies.maps;
+package com.java.buddies.basics.maps;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
 /**
- * Conversión de moneda
+ * <b>Caso de uso: <b/> Tipo de cambio
+ * <br>
+ * <b>Reglas de negocio: <b/>
  * - El tipo de cambio mide el valor de una moneda en relación a otra.
  * - El monto a convertir debe ser un valor positivo.
+ * - Las monedas hábilitadas para el tipo de cambio son soles y dólares.
+ * - La tasa de tipo de cambio es 3.78
+ * <br>
+ * <b>Criterios de aceptación: <b/>
+ * - La aplicación debe permitir ingresar la moneda de origen.
+ * - La aplicación debe permitir ingresar la moneda de destino.
+ * - La aplicación debe permitir ingresar el monto que se desea procesar.
+ * - La aplicación debe realizar la conversión de la moneda.
  */
-public class MoneyExchangeApplication {
+public class MoneyExchangeProcessor {
 
   private static final String PEN = "PEN";
   private static final String USD = "USD";
@@ -22,7 +32,7 @@ public class MoneyExchangeApplication {
     currenciesMap.put(PEN, "S/");
     currenciesMap.put(USD, "$");
 
-    double exchangeRate = 3.14;
+    double exchangeRate = 3.78;
 
     System.out.print("Por favor, ingrese la moneda de origen (PEN | USD): ");
     String originCurrency = scanner.next();

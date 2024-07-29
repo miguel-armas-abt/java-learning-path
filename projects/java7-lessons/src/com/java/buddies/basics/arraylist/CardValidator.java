@@ -1,17 +1,23 @@
-package com.java.buddies.array;
+package com.java.buddies.basics.arraylist;
 
 import java.util.*;
 
 /**
- * Validación de tarjeta de crédito
- * - La tarjeta debe tener un número válido y una fecha de vencimiento válida.
+ * <b>Caso de uso: <b/> Validación de tarjetas
+ * <br>
+ * <b>Reglas de negocio: <b/>
+ * - El número de tarjeta debe tener una longitud de 15 o 16 caracteres.
+ * - La tarjeta debe tener una fecha de vencimiento válida.
  * - El BIN (Bank Identification Number) es el conjunto de los seis primeros dígitos de una tarjeta, los cuales permiten identificar:
  *    - Banco y país de emisión de la tarjeta
  *    - Tipo de tarjeta (crédito, débito, etc)
  *    - Red de pago (Visa, Mastercard, etc)
- * - Ejemplo: 4506771111114444
+ * <br>
+ * <b>Criterios de aceptación: <b/> La aplicación debe validar la tarjeta ingresada.
+ * <br>
+ * <b>Ejemplos: <b/> Tarjeta válida: 4506771111114444, Tarjeta inválida: 4567891111114444
  */
-public class CreditCardValidation {
+public class CardValidator {
 
   private static final String EXPIRATION_DATE_REGEX = "(0[1-9]|1[0-2])/([0-9]{2})";
   private static final String[] INTERBANK_BIN = {"450677", "457396", "457397", "464049", "511002", "511003", "511005"};

@@ -1,16 +1,20 @@
-package com.java.buddies.ifelse;
+package com.java.buddies.basics.ifelse;
 
 import java.util.Scanner;
 
 /**
- * Transferencia
+ * <b>Caso de uso: <b/> Transferencia entre cuentas
+ * <br>
+ * <b>Reglas de negocio: <b/>
  * - Una de las características de una cuenta bancaria es que tiene saldo.
  * - Durante una transferencia intervienen dos cuentas, la cuenta de origen y la cuenta de destino.
  * - Durante una transferencia, la cuenta origen debe tener saldo disponible para poder realizar la transacción.
  * - Si el monto a transferir supera el saldo disponible en la cuenta origen, entonces la transferencia no puede realizarse.
  * - El monto a transferir debe ser un valor positivo.
+ * <br>
+ * <b>Criterios de aceptación: <b/> La aplicación debe permitir hacer una transferencia entre cuentas y mostrar sus saldos finales.
  */
-public class TransferApplication {
+public class TransferProcessor {
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
