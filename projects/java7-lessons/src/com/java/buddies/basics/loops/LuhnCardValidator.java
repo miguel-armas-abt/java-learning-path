@@ -14,7 +14,10 @@ import java.util.Scanner;
  *   - El número es válido si el total es divisible por 10.
  * <br>
  * <b>Criterios de aceptación: <b/> La aplicación debe validar el número de tarjeta ingresado usando el Algoritmo de Luhn.
- * <b>Ejemplos: <b/> Tarjeta válida: 4732458488669315, Tarjeta inválida: 4532458488669315
+ * <b>Ejemplos: <b/>
+ * - Tarjeta válida: 4732458488669315
+ * - Tarjeta inválida: 4532458488669315
+ * - Generador de tarjetas: https://www.vccgenerator.org/es/result/
  */
 public class LuhnCardValidator {
 
