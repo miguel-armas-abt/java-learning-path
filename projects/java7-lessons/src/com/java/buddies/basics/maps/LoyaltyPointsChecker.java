@@ -17,24 +17,27 @@ import java.util.Scanner;
  */
 public class LoyaltyPointsChecker {
 
+  private static final Map<String, Integer> customersDB = new HashMap<>();
+
+  // database
+  static {
+    customersDB.put("CUST001", 1200);
+    customersDB.put("CUST002", 850);
+    customersDB.put("CUST003", 400);
+  }
+
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-
-    // database
-    Map<String, Integer> customers = new HashMap<>();
-    customers.put("CUST001", 1200);
-    customers.put("CUST002", 850);
-    customers.put("CUST003", 400);
 
     // inputs & validations
     System.out.print("Por favor, ingrese su ID de cliente: ");
     String customerId = scanner.next();
 
-    if (!customers.containsKey(customerId)) {
+    if (!customersDB.containsKey(customerId)) {
       throw new IllegalArgumentException("ID de cliente no encontrado.");
     } else {
       // process
-      int loyaltyPoints = customers.get(customerId);
+      int loyaltyPoints = customersDB.get(customerId);
 
       // output
       System.out.println("Cliente " + customerId + " tiene " + loyaltyPoints + " puntos de lealtad.");
