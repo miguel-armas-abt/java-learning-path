@@ -58,10 +58,10 @@
 ---
 
 ## INSERTAR IMAGEN
-![Texto por defecto](2024.07.27-introduction/images/presentation-mode.png)
+![Texto por defecto](2024.08/03-introduction/images/presentation-mode.png)
 
 ## REFERENCIAR LINK
 [Google](https://www.google.com.pe)
 
 ## REFERENCIAR OTRO README
-[Texto para mostrar](2024.07.27-introduction/README.md)
+[Texto para mostrar](2024.08/03-introduction/README.md)
