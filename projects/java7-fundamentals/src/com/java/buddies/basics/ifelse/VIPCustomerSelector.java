@@ -7,7 +7,6 @@ import java.util.Scanner;
  * <br>
  * <b>Reglas de negocio: <b/>
  * - Un cliente se considera VIP si tiene más de un cierto monto en su cuenta.
- * - Los beneficios de ser VIP incluyen tasas de interés preferenciales y servicios personalizados.
  * - La categoría VIP puede ser "Plata", "Oro" o "Platino" dependiendo del saldo:
  *   - Plata: más de 10,000 y hasta 50,000
  *   - Oro: más de 50,000 y hasta 100,000
@@ -20,7 +19,6 @@ public class VIPCustomerSelector {
   private static final String PLATINUM = "Platino";
   private static final String GOLD = "Oro";
   private static final String SILVER = "Plata";
-  private static final String NO_VIP = "No VIP";
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
@@ -41,7 +39,7 @@ public class VIPCustomerSelector {
     } else if (accountBalance > 10000) {
       vipCategory = SILVER;
     } else {
-      vipCategory = NO_VIP;
+      throw new IllegalArgumentException("El cliente no tiene una categoría VIP");
     }
 
     // output
