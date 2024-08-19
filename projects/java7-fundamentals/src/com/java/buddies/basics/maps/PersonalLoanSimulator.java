@@ -14,6 +14,7 @@ import java.util.Scanner;
  *   - Cliente recurrente: 3% anual
  * - El monto del préstamo debe ser positivo.
  * - El plazo debe ser entre 1 y 10 años.
+ * - Pago total = monto × (1 + tasa de interés)^años
  * <br>
  * <b>Criterios de aceptación: <b/> La aplicación debe calcular y mostrar el total a pagar al final del plazo.
  */
