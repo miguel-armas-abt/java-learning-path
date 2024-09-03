@@ -24,6 +24,7 @@ public class CardObfuscator {
   private final static String SIX_CHARS_MASK = "******";
   private final static String FIVE_CHARS_MASK = "*****";
   private final static int DEFAULT_CARD_LENGTH = 16;
+  private final static int THIRD_SEGMENT_LENGTH = 4;
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
@@ -33,15 +34,14 @@ public class CardObfuscator {
     String cardNumber = scanner.next();
 
     //process
-    String mask = DEFAULT_CARD_LENGTH == cardNumber.length()
+    String mask = (DEFAULT_CARD_LENGTH == cardNumber.length())
         ? SIX_CHARS_MASK
         : FIVE_CHARS_MASK;
 
-    int thirdSegmentLength = 4;
-    int secondAndThirdSegmentLength = mask.length() + thirdSegmentLength;
+    int secondAndThirdSegmentLength = mask.length() + THIRD_SEGMENT_LENGTH;
     int totalLength = cardNumber.length();
 
-    String lastDigits = cardNumber.substring(totalLength - thirdSegmentLength);
+    String lastDigits = cardNumber.substring(totalLength - THIRD_SEGMENT_LENGTH);
     String initialDigits = cardNumber.substring(0, totalLength - secondAndThirdSegmentLength);
     cardNumber = initialDigits + mask + lastDigits;
 

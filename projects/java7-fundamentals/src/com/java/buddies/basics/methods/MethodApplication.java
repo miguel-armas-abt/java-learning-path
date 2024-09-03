@@ -5,9 +5,22 @@ import java.util.Scanner;
 public class MethodApplication {
 
   public static void main(String[] args) {
-//    int result = addition(2);
-//    double result = additionSecond(1, 2, 3);
+    System.out.println("################ Suma ################");
+    System.out.println(sum(2, 3));
+
+    System.out.println("################ Exponente ################");
+    System.out.println(exponent(2, 3));
+
+    System.out.println("################ Mayor de edad ################");
     printMessageIfIsLegalAge();
+  }
+
+  static double exponent(int base, int exponent) {
+    return Math.pow(base, exponent);
+  }
+
+  static int sum(int firstNumber, int secondNumber) {
+    return firstNumber + secondNumber;
   }
 
   static boolean isLegalAge() {
@@ -15,43 +28,15 @@ public class MethodApplication {
     System.out.print("Ingrese la edad: ");
     int age = scanner.nextInt();
 
-    //convencional con llaves
-//    if(age >= 18) {
-//      return true;
-//    }
-//    return false;
-
-    //convencional sin llaves
-//    if(age >= 18)
-//      return true;
-//    return false;
-
-    //operador ternario
-//    return (age >= 18)
-//        ? true
-//        : false;
-
-    //directo
     return (age >= 18);
-  }
-
-  static double additionSecond(int x, int y, int z) {
-    double result = 2*Math.pow(x, 2) + (3*y) - z + y;
-    return result;
-  }
-
-  static int addition(int x) {
-    int result = 2*x + 3;
-    return result;
   }
 
   static void printMessageIfIsLegalAge() {
     boolean isLegalAge = isLegalAge();
-    if(isLegalAge) {
-      System.out.println("Es mayor de edad");
-    } else {
-      System.out.println("Es menor de edad");
-    }
+    if(isLegalAge)
+      System.out.println("El usuario es mayor de edad");
+    else
+      throw  new IllegalArgumentException("El usuario es menor de edad");
   }
 
 }

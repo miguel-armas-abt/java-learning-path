@@ -1,4 +1,7 @@
-package com.java.buddies.basics.arraylist;
+package com.java.buddies.basics.collections.lists;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <b>Caso de uso: <b/> Consulta de historial de transacciones
@@ -11,23 +14,20 @@ package com.java.buddies.basics.arraylist;
  */
 public class TransactionHistory {
 
-  private static final String SEPARATOR = "----------------------------------------";
-
-  private static final String[] transactionsDB = {
-      "Depósito, 1000.00, 01/07/2024",
-      "Retiro, 200.00, 05/07/2024",
-      "Depósito, 500.00, 10/07/2024"
-  };
-
   public static void main(String[] args) {
+    List<String> transactions = new ArrayList<>();
+    transactions.add("Depósito, 1000.00, 01/07/2024");
+    transactions.add("Retiro, 200.00, 05/07/2024");
+    transactions.add("Depósito, 500.00, 10/07/2024");
+
     //output
-    for (String transaction : transactionsDB) {
+    for (String transaction : transactions) {
       String[] parts = transaction.split(",");
       System.out.println("Tipo: " + parts[0].trim());
       System.out.println("Monto: " + parts[1].trim());
       System.out.println("Fecha: " + parts[2].trim());
 
-      System.out.println(SEPARATOR);
+      System.out.println("----------------------------------------");
     }
   }
 

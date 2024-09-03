@@ -1,4 +1,4 @@
-package com.java.buddies.basics.maps;
+package com.java.buddies.basics.collections.maps;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -24,13 +24,13 @@ public class PersonalLoanSimulator {
   private static final String FREQUENT_USER = "R";
 
   public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-
-    //inputs & validations
     Map<String, Double> interestRates = new HashMap<>();
     interestRates.put(NEW_USER, 0.05);
     interestRates.put(FREQUENT_USER, 0.03);
 
+    Scanner scanner = new Scanner(System.in);
+
+    //inputs & validations
     System.out.print("Ingrese el monto del préstamo: ");
     double loanAmount = scanner.nextDouble();
 

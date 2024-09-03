@@ -1,4 +1,4 @@
-package com.java.buddies.basics.arraylist;
+package com.java.buddies.basics.regex;
 
 import java.util.*;
 

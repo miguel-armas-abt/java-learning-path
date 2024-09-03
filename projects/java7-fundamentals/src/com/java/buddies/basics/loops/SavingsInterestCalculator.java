@@ -30,12 +30,17 @@ public class SavingsInterestCalculator {
     if (balance <= 0)
       throw new IllegalArgumentException("El saldo debe ser positivo.");
 
-    double annualInterestRate;
+    double annualInterestRate = 0.0;
+
     if (balance < 1000) {
       annualInterestRate = 0.01;
-    } else if (balance <= 5000) {
+    }
+
+    if (balance >= 1000 && balance <= 5000) {
       annualInterestRate = 0.02;
-    } else {
+    }
+
+    if (balance > 5000) {
       annualInterestRate = 0.03;
     }
 

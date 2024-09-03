@@ -1,4 +1,4 @@
-package com.java.buddies.basics.arraylist;
+package com.java.buddies.basics.collections.lists;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,29 +25,23 @@ public class CustomerManagement {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
-    List<String> nameList = new ArrayList<>();
-    nameList.addAll(Arrays.asList(NAMES_DB));
+    //creo una nueva lista e inserto todos los elementos del arreglo
+    List<String> nameList = new ArrayList<>(Arrays.asList(NAMES_DB));
 
-    //Insertado un nuevo cliente
     System.out.print("Ingrese el nombre del nuevo cliente: ");
     String name = scanner.next();
     nameList.add(name);
 
     System.out.println("############# Lista de clientes #############");
-
-    //Mostrar la lista de clientes
     for(String currentName: nameList) {
       System.out.println(currentName);
     }
 
-    //Eliminar cliente por nombre
     System.out.print("Ingrese el nombre del cliente que dessea eliminar: ");
     String nameToRemove = scanner.next();
     nameList.remove(nameToRemove);
 
     System.out.println("############# Lista de clientes #############");
-
-    //Mostrar la lista de clientes
     for(String element: nameList) {
       System.out.println(element);
     }

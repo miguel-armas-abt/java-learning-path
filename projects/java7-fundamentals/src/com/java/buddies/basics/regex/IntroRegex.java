@@ -1,6 +1,6 @@
 package com.java.buddies.basics.regex;
 
-public class RegexApplication {
+public class IntroRegex {
   public static void main(String[] args) {
 
     String stringToTest = "938817321";

@@ -1,4 +1,4 @@
-package com.java.buddies.basics.maps;
+package com.java.buddies.basics.collections.maps;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -25,25 +25,25 @@ public class MoneyExchangeProcessor {
   private static final String USD = "USD";
 
   public static void main(String[] args) {
+    Map<String, String> symbolCurrenciesMap = new HashMap<>();
+    symbolCurrenciesMap.put(PEN, "S/");
+    symbolCurrenciesMap.put(USD, "$");
+
     Scanner scanner = new Scanner(System.in);
 
     //inputs & validations
-    Map<String, String> currenciesMap = new HashMap<>();
-    currenciesMap.put(PEN, "S/");
-    currenciesMap.put(USD, "$");
-
     double exchangeRate = 3.78;
 
     System.out.print("Por favor, ingrese la moneda de origen (PEN | USD): ");
     String originCurrency = scanner.next();
 
-    if(!currenciesMap.containsKey(originCurrency))
+    if(!symbolCurrenciesMap.containsKey(originCurrency))
       throw new IllegalArgumentException("La moneda de origen es inválida.");
 
     System.out.print("Por favor, ingrese la moneda de destino (PEN | USD): ");
     String destinationCurrency = scanner.next();
 
-    if(!currenciesMap.containsKey(destinationCurrency))
+    if(!symbolCurrenciesMap.containsKey(destinationCurrency))
       throw new IllegalArgumentException("La moneda de destino es inválida.");
 
     System.out.print("Por favor, ingrese el monto que desea convertir: ");
@@ -60,6 +60,6 @@ public class MoneyExchangeProcessor {
       amount = amount * exchangeRate;
 
     //output
-    System.out.println("El monto convertido es: " + currenciesMap.get(destinationCurrency) + amount);
+    System.out.println("El monto convertido es: " + symbolCurrenciesMap.get(destinationCurrency) + amount);
   }
 }

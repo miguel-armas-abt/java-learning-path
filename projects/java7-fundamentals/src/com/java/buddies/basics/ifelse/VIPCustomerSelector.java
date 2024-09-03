@@ -31,14 +31,21 @@ public class VIPCustomerSelector {
       throw new IllegalArgumentException("El saldo debe ser positivo.");
 
     // process
-    String vipCategory;
+    String vipCategory = "";
+
     if (accountBalance > 100000) {
       vipCategory = PLATINUM;
-    } else if (accountBalance > 50000) {
+    }
+
+    if (accountBalance > 50000 && accountBalance <= 100000) {
       vipCategory = GOLD;
-    } else if (accountBalance > 10000) {
+    }
+
+    if (accountBalance > 10000 && accountBalance <= 50000) {
       vipCategory = SILVER;
-    } else {
+    }
+
+    if (accountBalance <= 10000) {
       throw new IllegalArgumentException("El cliente no tiene una categoría VIP");
     }
 

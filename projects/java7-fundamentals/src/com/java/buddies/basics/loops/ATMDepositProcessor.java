@@ -1,4 +1,4 @@
-package com.java.buddies.basics.arraylist;
+package com.java.buddies.basics.loops;
 
 import java.util.ArrayList;
 import java.util.List;
