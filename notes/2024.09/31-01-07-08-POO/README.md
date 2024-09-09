@@ -1,6 +1,6 @@
 # PROGRAMACIÓN ORIENTADA A OBJETOS (POO)
 
-31 de agosto y 01 de setiembre de 2024 <br>
+31 de agosto, 01, 07 y 08 de setiembre de 2024 <br>
 
 [← Regresar a notas](../../README.md) <br>
 
@@ -20,14 +20,10 @@
   - Atributos (propiedades)
   - Métodos (comportamiento)
   - Método constructor
+  - Sobrecargar constructor
   - Getters
   - Setters
   - toString
-- GIT: 
-  - Control de versiones
-  - Repository (local & remote)
-  - Working directory
-  - pull
-  - push
-  - add
-  - commit
+  - Instanciar un objeto
+  - Diferencia entre clase y objeto
+  - POJO
