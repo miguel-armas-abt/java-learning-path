@@ -15,14 +15,14 @@ Los arreglos (arrays) y las listas (lists) son estructuras de datos que permiten
 
 > Declarar un arreglo y asignarle un valor a sus índices 
 > ```java
-> int[] numbers = new int[5]; // declarar un arreglo de enteros con 5 elementos
-> numbers[0] = 10;            // asignar valor al primer elemento
-> numbers[1] = 11;            // asignar valor al segundo elemento
+> int[] names = new String[5];   // declarar un arreglo de cadenas con 5 elementos
+> names[0] = "Jhon";             // asignar valor al primer elemento
+> names[1] = "Will";             // asignar valor al segundo elemento
 > ```
 > 
 > Recorrer un arreglo
 > ```java
-> for(int i: numbers) {
+> for(String i: names) {
 >   System.out.println(i);
 > }
 > ```
@@ -30,10 +30,10 @@ Los arreglos (arrays) y las listas (lists) son estructuras de datos que permiten
 ## Ejemplo de listas
 > Declarar un ArrayList y añadir elementos
 > ```java
-> List<Integer> numbers = new ArrayList<>();  // declarar una lista
-> numbers.add(10);                          // añadir un elemento
-> numbers.add(11);                          // añadir otro elemento
-> numbers.remove(0);                        // remover el elemento de la pisición 0
+> List<String> names = new ArrayList<>();  // declarar una lista
+> names.add("Jhon");                       // añadir un elemento
+> names.add("Will");                       // añadir otro elemento
+> names.remove(0);                         // remover el elemento de la pisición 0
 > ```
 >
 > Recorrer una lista
