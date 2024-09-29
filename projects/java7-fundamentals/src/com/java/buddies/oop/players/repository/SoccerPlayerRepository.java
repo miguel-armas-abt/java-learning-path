@@ -52,8 +52,6 @@ public class SoccerPlayerRepository {
   }
 
   public void deleteById(Long id) {
-    SoccerPlayer currentPlayer = this.findById(id);
-
     List<SoccerPlayer> modifiedList = new ArrayList<>();
 
     for (SoccerPlayer player: this.soccerPlayers) {
