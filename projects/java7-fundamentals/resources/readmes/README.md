@@ -11,4 +11,5 @@
 - [Métodos](../../src/com/java/buddies/basics/methods/README.md)
 - [Bucles](../../src/com/java/buddies/basics/loops/README.md)
 - [Programación orientada a objetos (POO)](../../src/com/java/buddies/oop/README.md)
+- [Objetos vs datos primitivos](../../src/com/java/buddies/basics/primitives/README.md)
 - [Arquitectura de paquetes](05-package-architecture/README.md)
