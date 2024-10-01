@@ -64,4 +64,4 @@
 [Google](https://www.google.com.pe)
 
 ## REFERENCIAR OTRO README
-[Texto para mostrar](../notes/2024.08/01-install-java/README.md)
+[Texto para mostrar](../notes/2024.agosto/01-install-java/README.md)

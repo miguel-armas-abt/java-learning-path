@@ -1,6 +1,10 @@
 # COMPARACIÓN DE OBJETOS Y DATOS PRIMITIVOS
 
-En Java, la comparación de datos primitivos y objetos sigue reglas diferentes debido a la naturaleza de cada tipo. 
+[← Regresar a notas](./../../../../../../resources/readmes/README.md) <br>
+
+---
+
+> En Java, la comparación de datos primitivos y objetos sigue reglas diferentes debido a la naturaleza de cada tipo. 
 
 ## Comparación de datos primitivos
 Los datos primitivos (`int`, `char`, `double`, etc.) se comparan directamente usando el operador `==`. 

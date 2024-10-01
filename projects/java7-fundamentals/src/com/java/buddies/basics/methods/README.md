@@ -1,7 +1,11 @@
 # MÉTODOS (FUNCIONES Y PROCEDIMIENTOS)
 
-- Los métodos son bloques de código que realizan una tarea específica y pueden ser llamados desde otras partes del programa.
-- Los métodos se utilizan para organizar y reutilizar código, facilitando el mantenimiento y mejorando la legibilidad.
+[← Regresar a notas](./../../../../../../resources/readmes/README.md) <br>
+
+---
+
+> - Los métodos son bloques de código que realizan una tarea específica y pueden ser llamados desde otras partes del programa.
+> - Los métodos se utilizan para organizar y reutilizar código, facilitando el mantenimiento y mejorando la legibilidad.
 
 ![Methods](./../../../../../../resources/images/methods/method.jpg)
 

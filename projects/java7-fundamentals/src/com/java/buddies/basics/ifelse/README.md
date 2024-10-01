@@ -1,4 +1,13 @@
 # CONDICIONALES (IF ELSE)
+
+[← Regresar a notas](./../../../../../../resources/readmes/README.md) <br>
+
+---
+
+> #### Condición
+> Es una expresión que se evalúa como verdadera (`true`) o falsa (`false`). 
+> Las condiciones son fundamentales para tomar decisiones dentro del código, permitiendo que el programa realice diferentes acciones según ciertos criterios.
+
 La estructura condicional `if-else` es útil cuando se quiere tomar decisiones según una condición específica.
 
 ## Ejemplos

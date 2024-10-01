@@ -1,5 +1,10 @@
 # BUCLES (FOREACH, FOR, WHILE)
-Los bucles permiten iterar un bloque de código varias veces según sea una condición o colección de elementos.
+
+[← Regresar a notas](./../../../../../../resources/readmes/README.md) <br>
+
+---
+
+> Los bucles permiten iterar un bloque de código varias veces según sea una condición o colección de elementos.
 
 ## Foreach
 El bucles `foreach` se utiliza para recorrer los elementos de una colección o arreglo.

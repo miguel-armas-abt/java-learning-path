@@ -1,5 +1,10 @@
 # ARREGLOS Y LISTAS
-Los arreglos (arrays) y las listas (lists) son estructuras de datos que permiten almacenar múltiples elementos.
+
+[← Regresar a notas](./../../../../../../resources/readmes/README.md) <br>
+
+---
+
+> Los arreglos (arrays) y las listas (lists) son estructuras de datos que permiten almacenar múltiples elementos.
 
 | Característica     | Array                                                            | List                                                                           |   
 |--------------------|------------------------------------------------------------------|--------------------------------------------------------------------------------|
