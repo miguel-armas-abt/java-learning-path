@@ -58,7 +58,7 @@
 
 
 > #### Paquete (package)
-> Es una agrupación de clases que facilita la organización del código de manera estructurada.
+> Un paquete es un contenedor que agrupa clases facilitando la organización del código.
 > En el siguiente ejemplo se indica que la clase `DestinationAccount` pertenece al paquete `com.bcp.yape.accounts.models`.
 > 
 > ```java
