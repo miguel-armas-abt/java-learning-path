@@ -1,0 +1,15 @@
+# NOTAS
+
+- [Introducción](resources/01-introduction/README.md)
+- [Tipos de datos](resources/02-data-types/README.md)
+- [Variables](resources/03-variables/README.md)
+- [Excepciones](resources/04-exceptions/README.md)
+- [Condicionales](java7-fundamentals/src/com/java/buddies/basics/ifelse/README.md)
+- [Tratamiento de cadenas](java7-fundamentals/src/com/java/buddies/basics/strings/README.md)
+- [Expresiones regulares (REGEX)](java7-fundamentals/src/com/java/buddies/basics/regex/README.md)
+- [Colecciones](java7-fundamentals/src/com/java/buddies/basics/collections/README.md)
+- [Métodos](java7-fundamentals/src/com/java/buddies/basics/methods/README.md)
+- [Bucles](java7-fundamentals/src/com/java/buddies/basics/loops/README.md)
+- [Programación orientada a objetos (POO)](java7-fundamentals/src/com/java/buddies/oop/README.md)
+- [Objetos vs datos primitivos](java7-fundamentals/src/com/java/buddies/basics/primitives/README.md)
+- [Arquitectura de paquetes](resources/05-package-architecture/README.md)
