@@ -7,7 +7,7 @@
 > - Los métodos son bloques de código que realizan una tarea específica y pueden ser llamados desde otras partes del programa.
 > - Los métodos se utilizan para organizar y reutilizar código, facilitando el mantenimiento y mejorando la legibilidad.
 
-![Methods](../../../../../../../../resources/images/methods/method.jpg)
+![Methods](../../../resources/images/methods/method.jpg)
 
 | Elemento                  | Descripción                                                                                                                                  |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
