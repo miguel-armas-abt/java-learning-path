@@ -1,11 +1,11 @@
-package com.java.buddies.models;
+package com.java.buddies.dto;
 
-public class SoccerResponse {
+public class TeamPlayerDTO {
 
   private String playerName;
   private String teamName;
 
-  public SoccerResponse(String playerName, String teamName) {
+  public TeamPlayerDTO(String playerName, String teamName) {
     this.playerName = playerName;
     this.teamName = teamName;
   }

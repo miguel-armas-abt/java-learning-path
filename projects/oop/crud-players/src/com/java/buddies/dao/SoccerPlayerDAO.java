@@ -1,43 +1,43 @@
-package com.java.buddies.repository;
+package com.java.buddies.dao;
 
-import com.java.buddies.models.SoccerPlayer;
+import com.java.buddies.entity.PlayerEntity;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public class SoccerPlayerRepository {
+public class SoccerPlayerDAO {
 
-  private static final SoccerPlayer[] PLAYERS_DATABASE = {
-      new SoccerPlayer(1L, "Kylian Mbappé", "Delantero", 24, 1L),
-      new SoccerPlayer(2L, "Vinícius Jr.", "Delantero", 23, 1L),
-      new SoccerPlayer(3L, "Robert Lewandowski", "Delantero", 35, 2L),
-      new SoccerPlayer(4L, "Pedri", "Centrocampista", 21, 2L),
-      new SoccerPlayer(5L, "Neymar Jr.", "Delantero", 31, 3L),
-      new SoccerPlayer(6L, "Lionel Messi", "Delantero", 36, 3L)
+  private static final PlayerEntity[] PLAYERS_DATABASE = {
+      new PlayerEntity(1L, "Kylian Mbappé", "Delantero", 24, 1L),
+      new PlayerEntity(2L, "Vinícius Jr.", "Delantero", 23, 1L),
+      new PlayerEntity(3L, "Robert Lewandowski", "Delantero", 35, 2L),
+      new PlayerEntity(4L, "Pedri", "Centrocampista", 21, 2L),
+      new PlayerEntity(5L, "Neymar Jr.", "Delantero", 31, 3L),
+      new PlayerEntity(6L, "Lionel Messi", "Delantero", 36, 3L)
   };
 
-  private List<SoccerPlayer> soccerPlayers;
+  private List<PlayerEntity> soccerPlayers;
 
-  public SoccerPlayerRepository() {
+  public SoccerPlayerDAO() {
     soccerPlayers = new ArrayList<>(Arrays.asList(PLAYERS_DATABASE));
   }
 
-  public void add(SoccerPlayer player) {
+  public void add(PlayerEntity player) {
     this.soccerPlayers.add(player);
   }
 
-  public List<SoccerPlayer> findAll() {
-    this.soccerPlayers.sort(Comparator.comparing(SoccerPlayer::getId));
+  public List<PlayerEntity> findAll() {
+    this.soccerPlayers.sort(Comparator.comparing(PlayerEntity::getId));
     return this.soccerPlayers;
   }
 
-  public SoccerPlayer findById(Long id) {
+  public PlayerEntity findById(Long id) {
     if(id == null)
       throw new IllegalArgumentException("[400 - Bad request] Id must not be null");
 
-    SoccerPlayer selected = null;
-    for (SoccerPlayer player: this.soccerPlayers) {
+    PlayerEntity selected = null;
+    for (PlayerEntity player: this.soccerPlayers) {
       if(id.equals(player.getId())) {
         selected = player;
         break;
@@ -52,9 +52,9 @@ public class SoccerPlayerRepository {
   }
 
   public void deleteById(Long id) {
-    List<SoccerPlayer> modifiedList = new ArrayList<>();
+    List<PlayerEntity> modifiedList = new ArrayList<>();
 
-    for (SoccerPlayer player: this.soccerPlayers) {
+    for (PlayerEntity player: this.soccerPlayers) {
       if(!id.equals(player.getId()))
         modifiedList.add(player);
     }
@@ -62,15 +62,15 @@ public class SoccerPlayerRepository {
     this.soccerPlayers = modifiedList;
   }
 
-  public void updateById(Long id, SoccerPlayer updatedPlayer) {
+  public void updateById(Long id, PlayerEntity updatedPlayer) {
     if(updatedPlayer == null)
       throw new IllegalArgumentException("[400 - Bad request] player to update must not be null");
 
-    SoccerPlayer currentPlayer = this.findById(id);
+    PlayerEntity currentPlayer = this.findById(id);
 
-    List<SoccerPlayer> modifiedList = new ArrayList<>();
+    List<PlayerEntity> modifiedList = new ArrayList<>();
 
-    for (SoccerPlayer player: this.soccerPlayers) {
+    for (PlayerEntity player: this.soccerPlayers) {
       if(!id.equals(player.getId())) {
         modifiedList.add(player);
       }

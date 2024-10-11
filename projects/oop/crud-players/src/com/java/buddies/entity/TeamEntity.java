@@ -1,6 +1,6 @@
-package com.java.buddies.models;
+package com.java.buddies.entity;
 
-public class SoccerTeam {
+public class TeamEntity {
 
   private Long id;
   private String name;
@@ -8,10 +8,10 @@ public class SoccerTeam {
   private String stadium;
   private String city;
 
-  public SoccerTeam() {
+  public TeamEntity() {
   }
 
-  public SoccerTeam(Long id, String name, String coach, String stadium, String city) {
+  public TeamEntity(Long id, String name, String coach, String stadium, String city) {
     this.id = id;
     this.name = name;
     this.coach = coach;
