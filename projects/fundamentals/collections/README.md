@@ -14,7 +14,7 @@
 | `Implementaciones` | -                                                                | `List` es una interface de Java, y las implementación más común es `ArrayList` |
 
 ## Tamaño, valor e índice
-![Collections](../../../../../../../../resources/images/collections/arrays.jpg)
+![Collections](./../../../resources/images/collections/arrays.jpg)
 
 ## Ejemplo de arrays
 
@@ -67,7 +67,7 @@ Cada clave en el mapa es única y se asocia a un único valor, pero un valor pue
 | `Implementaciones` | Map es una interfaz de Java. Las implementaciones más común es HashMap.                         |
 
 ## Clave valor
-![Collections](../../../../../../../../resources/images/collections/maps.png)
+![Collections](./../../../resources/images/collections/maps.png)
 
 ## Ejemplo de maps
 > Declarar un HashMap y añadir elementos
